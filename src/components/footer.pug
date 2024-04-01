@@ -1,0 +1,8 @@
+footer(class="footer")
+        div.footer__wrapper
+            nav 
+                ul.menu__list
+                    each value, index in {'Услуги' : '#services', 'Отзывы' : '#commits', 'Сертификация' : '#certificate', 'Карта' : '#map'}
+                        li
+                            a(href=value)= index
+            a(href="index.html", target="_blank", rel="noopener noreferrer") LOGO  

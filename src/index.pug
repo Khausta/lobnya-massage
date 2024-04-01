@@ -1,0 +1,91 @@
+doctype html
+head(lang="ru")
+    meta(charset='UTF-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Детский массаж
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:wght@400;700&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="./css/style.css")
+   
+body
+    include ./components/header.pug
+    main 
+        section.promo
+            div.promo__wrapper 
+                div.promo__photo
+                    img(src="./img/promo-photo.png", alt="Фотография массажиста Евгения с ребенком")
+                div.promo__content
+                    h1.promo__title Вы можете доверить заботу о здоровом развитии ребенка мне
+                    div.promo__buttons
+                        a(class="button button_light-blue" href="#") 
+                            span Записаться
+                            svg( class="button__svg-hover" width="177" height="56" viewBox="0 0 177 56" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                rect(x="2" y="2.00003" width="173" height="52" rx="26" stroke="#84E1FF" stroke-width="3" stroke-miterlimit="3.07467" stroke-linecap="round" stroke-dasharray="1 7")
+                        a(class="button button_telegram button_social" href="#") 
+                            div.button__social-img
+                                img(src="./img/telegram.svg", alt="telegram")
+                            svg(class="button__svg-hover" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="28" cy="28" r="26" stroke="#FFAEF7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 6")
+                        a(class="button button_whatsapp button_social" href="#") 
+                            div.button__social-img
+                                img(src="./img/whatsapp.svg", alt="whatsapp")
+                            svg(class="button__svg-hover" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="28" cy="28" r="26" stroke="#8AFF9D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 6")
+                        a(class="button button_vk button_social" href="#") 
+                            div.button__social-img
+                                img(src="./img/vk.svg", alt="vk")
+                            svg(class="button__svg-hover" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="28" cy="28" r="26" stroke="#FFD686" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 6")
+                        a(class="button button_profi" href="#") 
+                            div.button__social-img
+                                img(src="./img/profi.png", alt="profi.ru")
+                            svg(class="button__svg-hover" width="159" height="56" viewBox="0 0 159 56" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                rect(x="2" y="2.00003" width="155" height="52" rx="26" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 5")
+            div.promo__bottom
+                img(src="./img/promo__bottom.png", alt="")
+        section.benefits 
+            div.container
+                div.benefits__items              
+                    div.benefits__item
+                        div.card
+                            div.card__upper 
+                                p.card__text 9 лет опыта
+                            p.sub-card С 2015 года непрерывно выполняю массаж деткам для общего развития и по медицинским показаниям лечащего врача
+                    div.benefits__item  
+                        div.card
+                            div.card__upper 
+                                p.card__text Медицинское образование
+                            p.sub-card С 2015 года непрерывно выполняю массаж деткам для общего развития и по медицинским показаниям лечащего врача          
+                    div.benefits__item  
+                        div.card
+                            div.card__upper 
+                                p.card__text Свой массажный стол
+                            p.sub-card С 2015 года непрерывно выполняю массаж деткам для общего развития и по медицинским показаниям лечащего врача                    
+                    div.benefits__item  
+                        div.card
+                            div.card__upper 
+                                p.card__text Свой кабинет
+                            p.sub-card С 2015 года непрерывно выполняю массаж деткам для общего развития и по медицинским показаниям лечащего врача                    
+                    div.benefits__item  
+                        div.card
+                            div.card__upper 
+                                p.card__text Осуществляю выезд на дом
+                            p.sub-card С 2015 года непрерывно выполняю массаж деткам для общего развития и по медицинским показаниям лечащего врача                    
+                    div.benefits__item  
+                        div.card
+                            div.card__upper 
+                                p.card__text Индивидуальный подход к каждому ребенку
+                            p.sub-card С 2015 года непрерывно выполняю массаж деткам для общего развития и по медицинским показаниям лечащего врача                    
+            div.benefits__bottom
+                img(src="./img/benefits-bottom.png", alt="")
+        section.services 
+            div.services__bottom
+                img(src="./img/services-bottom.png", alt="")
+        section.commits
+            div.commits__bottom
+                img(src="./img/commits-bottom.png", alt="")
+
+    include ./components/footer.pug
+    script(src="./js/main.js")
+                
